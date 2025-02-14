@@ -15,7 +15,7 @@ public class Atm {
 
         System.out.println("An attempt to put: " + money);
 
-        if(money%10 != 0 || money < 0)
+        if(currency.isMultiplicity(money) || money < 0)
         {
             currency.getErrorMessageDepositNotMultiple();
 

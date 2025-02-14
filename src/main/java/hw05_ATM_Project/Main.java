@@ -17,7 +17,14 @@ public class Main {
         cashBoxR.getBalance();
         atm.IssuingBanknotes(690);
         cashBoxR.getBalance();
-
+        CashBox cashBoxU = new DollarCashBox();
+        Atm atm2 = new Atm(cashBoxU);
+        atm2.acceptBanknotes(3400);
+        cashBoxU.getBalance();
+        atm2.IssuingBanknotes(45000);
+        cashBoxU.getBalance();
+        atm2.IssuingBanknotes(1000);
+        cashBoxU.getBalance();
 
     }
 }

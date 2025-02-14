@@ -8,6 +8,6 @@ public interface CashBox {
      void getErrorMessageDepositNotMultiple();
      void getErrorMessageEnterNotMiltiple();
      void getErrorMessageInsufficientFunds(int check);
-
+     boolean isMultiplicity(int money);
 }
 
